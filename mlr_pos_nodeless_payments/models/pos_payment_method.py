@@ -51,6 +51,13 @@ class PosPaymentMethod(models.Model):
         else:
             return super()._test_connection()
 
+    def register_nodeless_io(self):
+        return {
+            "url": "https://nodeless.io/?ref=6f0ff693-eb06-469b-a24e-37809bbaa1c6",
+            "type": "ir.actions.act_url",
+			"target": "new",
+        }
+
     def nodeless_create_crypto_invoice_payment_link(self, args):
         try:
             _logger.info(f"Called Nodeless nodeless_create_crypto_invoice_payment_link. Passed args are {args}")
