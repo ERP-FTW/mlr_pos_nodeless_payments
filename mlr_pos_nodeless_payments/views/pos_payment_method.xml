@@ -17,6 +17,9 @@
                     <div colspan="2" class="mt16" attrs="{'invisible': [('use_payment_terminal', '!=', 'nodeless')], 'required': [('use_payment_terminal', '=', 'nodeless')]}">
                     <button name="action_test_connection" type="object" string="Test CryptoPay Server connection" class="oe_highlight"/>
                     </div>
+                    <div colspan="2" class="mt16" attrs="{'invisible': [('use_payment_terminal', '!=', 'nodeless')], 'required': [('use_payment_terminal', '=', 'nodeless')]}">
+                    <button name="register_nodeless_io" type="object" string="Register on Nodeless.io" class="oe_highlight"/>
+                    </div>
                 </group>
             </xpath>
         </field>
